@@ -8,9 +8,9 @@ import WebFont from 'webfontloader';
 
 //ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render((
-    <Router>
+    /*<Router>  */
         <App/>
-    </Router>
+    /*  </Router>  */
 ), document.getElementById('root'))
 
 registerServiceWorker();

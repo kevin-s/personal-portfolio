@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Header} from './Header';
+import withTracker from './withTracker';
+
 import {Home} from './Home';
 import {Resume} from './Resume';
 import {Reviews} from './Reviews';
@@ -18,9 +19,9 @@ export default class App extends Component {
         <Router>
             <div>
                 <Switch>
-                    <Route exact path="/" component={Home}/>
-                    <Route path="/resume" component={Resume}/>
-                    <Route path="/reviews" component={Reviews}/>
+                    <Route exact path="/" component={withTracker(Home)}/>
+                    <Route path="/resume" component={withTracker(Resume)}/>
+                    <Route path="/reviews" component={withTracker(Reviews)}/>
                     <Route component={NoMatch} />
                 </Switch>
             </div>
