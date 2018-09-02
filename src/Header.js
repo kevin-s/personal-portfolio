@@ -7,7 +7,7 @@ export class Header extends Component {
             <div className="header">
                 <a href="/" className="name">Kevin J. Shannon</a>
                 <div className="header-right">
-                    <a className="active" href="/">Home</a>
+                    <a href="/">Home</a>
                     <a href="/resume">Resume</a>
                     <a href="https://github.com/kevin-s" target="_blank" rel="noopener noreferrer">Github</a>
                     <a href="/reviews">Reviews</a>
