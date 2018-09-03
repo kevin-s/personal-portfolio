@@ -7,7 +7,8 @@ import {Resume} from './Resume';
 import {Reviews} from './Reviews';
 import {NoMatch} from './NoMatch';
 import {
-    BrowserRouter as Router,
+    BrowserRouter,
+    HashRouter,
     Route,
     Switch,
     Link
@@ -16,16 +17,17 @@ import {
 export default class App extends Component {
   render() {
     return (
-        <Router>
+        <HashRouter>
             <div>
                 <Switch>
                     <Route exact path="/" component={withTracker(Home)}/>
                     <Route path="/resume" component={withTracker(Resume)}/>
                     <Route path="/reviews" component={withTracker(Reviews)}/>
+                    /*<Route path='/data/reviews.json' component={() => window.location = 's3bucket/data/reviews.json'}/>  */
                     <Route component={NoMatch} />
                 </Switch>
             </div>
-        </Router>
+        </HashRouter>
 
     );
   }

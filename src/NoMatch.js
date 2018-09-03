@@ -13,6 +13,7 @@ export class NoMatch extends Component {
                     <h3>
                         No match for <code>{window.location.pathname}</code>
                     </h3>
+                    <p>Try going back to <a href="/">the home page.</a></p>
                 </div>
             </div>
         );
