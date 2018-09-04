@@ -7,7 +7,6 @@ export class Resume extends Component {
     render() {
         return (
             <div className="App">
-                <Header />
                 <h1>RESUME PAGE</h1>
             </div>
         );

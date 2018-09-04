@@ -38,7 +38,6 @@ export class Reviews extends Component {
 
         return (
             <div>
-                <Header />
                 <h2>Reviews</h2>
 
                 <ul>

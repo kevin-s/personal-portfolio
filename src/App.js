@@ -4,7 +4,9 @@ import withTracker from './withTracker';
 
 import {Home} from './Home';
 import {Resume} from './Resume';
+import {Footer} from './Footer';
 import {Reviews} from './Reviews';
+import {Contact} from './Contact';
 import {NoMatch} from './NoMatch';
 import {
     BrowserRouter,
